@@ -15,6 +15,11 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+group :production do 
+  gem 'pg', '~> 1.3', '>= 1.3.5'
+end
+
+
 group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
